@@ -54,6 +54,9 @@ body,html {
 header {
     background-color: var(--cn2);
     padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
 .logo-nav {
@@ -106,13 +109,15 @@ header {
     justify-content: start;
     animation: fadein 0.5s normal;
     transition: 1s;
+    position: fixed;
+    z-index: 1;
 }
 
 .navigation-mobile-c1 {
     background-color: var(--cn2);
     min-width: 60%;
-    max-height: 85vh;
-    min-height: 85vh;
+    max-height: 100vh;
+    min-height: 100vh;
     box-shadow: 0px 0px 50px black;
 }
 
@@ -120,7 +125,7 @@ header {
     list-style: none;
     font-size: 30px;
     font-weight: 600;
-    margin-top: 10%;
+    margin-top: 30%;
 }
 
 .navigation-mobile-c1 ul li {
@@ -158,3 +163,8 @@ header {
     }
 }
 
+main {
+    background-color: black;
+    width: 100%;
+    padding: 90px;
+}

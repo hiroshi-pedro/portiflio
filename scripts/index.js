@@ -11,7 +11,7 @@ $(function() {
         
     })
 
-    $('#navigation-cell-b').click(function() {
+    $('#navigation-cell-b, .links-nav, .navigation-mobile').click(function() {
         $('.navigation-mobile').css("display", "none")
         $('#navigation-cell-a').css("display", "block")
         $('#navigation-cell-b').css("display", "none")
