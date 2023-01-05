@@ -1,0 +1,160 @@
+/*var-color*/
+
+:root {
+    --cn1: #F26800;
+    --cn2: #14140F;
+    --cn3: #A3CCAB;
+    --cn4: #053D38;
+    --white: #ffff;
+}
+/*var-fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --fnt1: 'Quicksand', sans-serif;
+}
+
+/*style-base*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--fnt1);
+}
+
+a {
+    color: var(--white);
+}
+
+body,html {
+    max-width: 100%;
+    background-color: var(--cn4);
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+/*flex*/
+
+.flex-r-sb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+            /*style-component-page*/
+
+/*Navigation-bar*/
+
+header {
+    background-color: var(--cn2);
+    padding: 10px 0;
+}
+
+.logo-nav {
+    width: 40%;
+    color: var(--white);
+    font-family: var(--fnt1);
+    text-align: end;
+}
+
+.navigation {
+    width: 60%;
+    text-decoration: none;
+    color: var(--white); 
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navigation ul li {
+    margin: 0 10px;
+}
+
+.navigation ul li a:hover {
+    color: var(--cn1);
+}
+
+/*Nav celular*/
+
+.navigation-cell {
+    display: none; 
+}
+
+.navigation-cell i{
+    color: var(--white);
+    font-size: 35px;
+}
+
+#navigation-cell-b {
+    display: none;
+}
+
+.navigation-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    animation: fadein 0.5s normal;
+    transition: 1s;
+}
+
+.navigation-mobile-c1 {
+    background-color: var(--cn2);
+    min-width: 50%;
+    max-height: 85vh;
+    min-height: 85vh;
+    box-shadow: 0px 0px 50px black;
+}
+
+.navigation-mobile-c1 ul {
+    list-style: none;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10%;
+}
+
+.navigation-mobile-c1 ul li {
+    margin: 35px 0;
+    padding-right: 20px;
+    text-align: end;
+    animation: fadein 0.5s normal;
+    text-align: center;
+}
+
+.navigation-mobile-c1 ul li a:hover {
+    color: var(--cn1);
+}
+
+.navigation-mobile {
+    display: none;
+} 
+
+@keyframes fadein {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }
+
+@media only screen and (max-width:519px) {
+    .navigation {
+        display: none;
+    }
+
+    .navigation-cell {
+        display: block;
+    }
+}
+
