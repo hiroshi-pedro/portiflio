@@ -234,3 +234,41 @@ main {
 .Buton-start-btn:hover {
     padding: 0px;
 }
+
+@media only screen and (max-width:519px) {
+    .navigation {
+        display: none;
+    }
+
+    .navigation-cell {
+        display: block;
+    }
+
+    .Buton-start-btn {
+        width: 60vw;
+    }
+
+    .Buton-start-btn button {
+        width: 60vw;
+        padding: 10px;
+    }
+
+    .home-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-text p {
+        color: var(--white);
+        font-size: 1.4em;
+        margin-top: 1em;
+        font-weight: 500;
+    }
+
+    .home-image-image img{
+        height: 35vh;
+        width: auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+}
