@@ -1,14 +1,14 @@
 $(function() {
  const dataSkills = [
 {
+    skill: "HTML",
+    description: "HTML é uma linguagem de marcação para criar páginas web. Ele usa tags para dar estrutura e           significado ao conteúdo da página, como texto, imagens, vídeos e formulários. As tags podem ter atributos que      fornecem mais informações sobre o elemento. O HTML é usado com o CSS e o JavaScript para criar páginas         interativas e com aparência agradável.",
+    incon: '<i class="fa-brands fa-html5"></i>'
+},
+{
     skill: "CSS",
     description: "O CSS é uma linguagem de estilo que permite que você aplique estilos, como fontes, cores, e espaçamento para os elementos em um documento HTML. Ele funciona da seguinte maneira: você escreve regras que dizem como os elementos em um documento devem ser exibidos.",
     incon: '<i class="fa-brands fa-css3-alt"></i>'
-},
-{
-    skill: "HTML",
-    description: "HTML é uma linguagem de marcação para criar páginas web. Ele usa tags para dar estrutura e significado ao conteúdo da página, como texto, imagens, vídeos e formulários. As tags podem ter atributos que fornecem mais informações sobre o elemento. O HTML é usado com o CSS e o JavaScript para criar páginas interativas e com aparência agradável.",
-    incon: '<i class="fa-brands fa-html5"></i>'
 },
 {
     skill: "Java-script",
@@ -49,5 +49,17 @@ $.each(dataSkills, function(index, element) {
         $(this).break();
     })
   });
-})
 
+  function sliderSkl() { 
+    $('.skills-group').slick({
+    infinite: true,
+    slidesToScroll: 3,
+    variableWidth: true
+  });
+}
+
+    var elementWidth = $(window).width();
+    if(elementWidth < 698) {
+          sliderSkl()
+    }
+})
