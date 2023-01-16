@@ -259,6 +259,10 @@ main {
     padding-right: 5%;
 }
 
+.skills-group-cll {
+    display: none;
+}
+
 .skill-single {
     font-size: 40px;
     width: 33%;
@@ -329,16 +333,30 @@ main {
     }
 
     .skills-group {
-        width: 100%;
-        margin: auto;
-        padding: 0;
+        display: none;
+    }
+
+    .skills-group-cll {
         display: flex;
-        flex-direction: column;
+        overflow: auto;
+        margin-bottom: 70px;
+    }
+
+    .skills-group-cll::-webkit-scrollbar {
+        background-color: var(--cn2);
+        border-radius: 10px;
+        height: 10px;
     }
 
     .skill-single {
         width: auto;
-        padding: 20px;
+        padding:  0 20px;
+        margin-bottom: 20px;
+    }
+
+    .skills-group-cll::-webkit-scrollbar-thumb {
+        background-color: var(--cn1);
+        border-radius: 10px;
     }
 
     .skill-single:hover {

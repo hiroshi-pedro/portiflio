@@ -38,7 +38,10 @@ $(function() {
 //Objeto
 
 $.each(dataSkills, function(index, element) {
-    $('.skills-group').append(`<div class="skill-single" value="${index}"><h1>${element.incon}</h1></div>`)
+    $('.skills-group').append(`<div class="skill-single"><h1>${element.incon}</h1></div>`)
+    console.log(index)
+
+    $('.skills-group-cll').append(`<div class="skill-single"><h1>${element.incon}</h1></div>`)
     console.log(index)
 
     $('.skill-single').click(function() {
@@ -49,17 +52,4 @@ $.each(dataSkills, function(index, element) {
         $(this).break();
     })
   });
-
-  function sliderSkl() { 
-    $('.skills-group').slick({
-    infinite: true,
-    slidesToScroll: 3,
-    variableWidth: true
-  });
-}
-
-    var elementWidth = $(window).width();
-    if(elementWidth < 698) {
-          sliderSkl()
-    }
 })
