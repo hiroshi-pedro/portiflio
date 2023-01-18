@@ -58,7 +58,25 @@ header {
     padding: 10px 0;
     position: fixed;
     width: 100%;
+    max-width: 100%;
     z-index: 2;
+}
+
+.alert-form {
+    width: 85%;
+    padding: 20px;
+    background-color: var(--cn2);
+    color: red;
+    font-weight: 600;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 30px;
+    border: 5px solid var(--white);
+    display: none;
 }
 
 .logo-nav {
@@ -167,6 +185,7 @@ header {
 
 main {
     padding-top: 100px;
+    width: 100%;
 }
 
 .home {
@@ -290,6 +309,129 @@ main {
     font-weight: 400;
 }
 
+.sites {
+    margin-top: 60px;
+}
+
+.sites-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.site-single {
+    padding-bottom: 40px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.site-single img{
+    height: 250px;
+    max-width: 100%;
+}
+
+.projetos-icon {
+    text-align: center;
+    color: var(--cn1);
+    font-weight: 700;
+    font-size: 1.3em;
+    transition: 1s;
+}
+
+.projetos-icon:hover {
+    color: var(--cn3);
+}
+
+.sobre {
+    margin-top: 70px;
+    padding-bottom: 100px;
+}
+
+.sobre-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.sobre-flex-img {
+    display: flex;
+    justify-content: center;
+    width: 50%; 
+}
+
+.sobre-flex-img img{
+    height: 400px;
+}
+
+.sobre-flex-text {
+    padding: 5% 0;
+    color: var(--white);
+    font-weight: 500;
+    width: 50%;
+    font-size: 1.5em;
+}
+
+#titles-sobre {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 40px;
+}
+
+.contato {
+    background-color: var(--cn1);
+    height: 95vh;
+    position: relative;
+    padding-top: 70px;
+    width: 100%;
+}
+
+.contato-form {
+    width: 400px;
+    padding: 20px;
+    background-color: var(--cn4);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+}
+
+.contato-form input {
+    width: 100%;
+    margin-bottom: 5%;
+    height: 35px;
+    border: none;
+    padding-left: 10px;
+}
+
+.contato-form textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin-bottom: 5%;
+    border: none;
+    padding-left: 10px;
+    padding-top: 5px;
+    height: 80px;
+    max-height: 80px;
+    min-height: 80px;
+}
+
+.contato-form #button-input {
+    margin-bottom: 0%;
+    color: var(--white);
+    background-color: var(--cn2);
+    font-weight: 700;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.contato-form #button-input:hover {
+    background-color: var(--cn1);
+}
+
 @media only screen and (max-width:715px) {
     .navigation {
         display: none;
@@ -366,27 +508,28 @@ main {
         color: var(--cn3);
         font-size: 40px;
     }
-}
 
-.sites {
-    margin-top: 60px;
-}
+    .sobre-flex {
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
 
-.sites-flex {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 60px;
-}
+    .sobre-flex-text {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.3em;
+    }
 
-.site-single {
-    padding-bottom: 40px;
-    max-width: 100%;
-    margin: auto;
-}
-
-.site-single img{
-    height: 250px;
-    max-width: 100%;
+    .sobre-flex-img {
+        display: flex;
+        justify-content: center;
+        width: 100%; 
+        margin: 35px auto;
+    }
+    
+    .sobre-flex-img img{
+        height: 350px;
+    }
 }

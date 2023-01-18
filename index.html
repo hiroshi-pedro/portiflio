@@ -20,6 +20,7 @@
                         <li><a href="#" target="_blank">Home</a></li>
                         <li><a href="#" target="_blank">Tecnologias</a></li>
                         <li><a href="#" target="_blank">Projetos</a></li>
+                        <li><a href="#" target="_blank">Sobre</a></li>
                         <li><a href="#" target="_blank">Contato</a></li>
                     </ul>
                 </nav>
@@ -41,6 +42,7 @@
                 <li class="links-nav"><a href="#" target="_blank">Home</a></li>
                 <li class="links-nav"><a href="#" target="_blank">Tecnologias</a></li>
                 <li class="links-nav"><a href="#" target="_blank">Projetos</a></li>
+                <li class="links-nav"><a href="#" target="_blank">Sobre</a></li>
                 <li class="links-nav"><a href="#" target="_blank">Contato</a></li>
             </ul>
         </div>
@@ -88,19 +90,45 @@
                     <h1>Projetos</h1>
                 </div>
                 <div class="sites-flex">
-                    <div class="site-single"><img src="images/computador_pokemon.png" alt="Notebook com um site dentro"></div>
-                    <div class="site-single"><img src="images/tablet_tempo.png" alt="Tablet com um site dentro"></div>
                     <div class="site-single"><img src="images/celular_gym.png" alt="celular com um site dentro"></div>
+                    <div class="site-single"><img src="images/tablet_tempo.png" alt="Tablet com um site dentro"></div>
+                    <div class="site-single"><img src="images/computador_pokemon.png" alt="Notebook com um site dentro"></div>
                 </div>
                 <div class="projetos-icon">
                     <p>Ver mais</p>
-                    
+                    <i class="fa-solid fa-circle-arrow-down"></i>
+                </div>
+            </section>
+            <section class="sobre">
+                <div class="titles" id="titles-sobre">
+                    <h1>Sobre</h1>
+                </div>
+                <div class="sobre-flex">
+                    <div class="sobre-flex-img"><img src="images/celularIphone.png" alt=""></div>
+                    <div class="sobre-flex-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi rerum quaerat tempora vitae animi placeat saepe magni doloribus repellendus, molestiae id illo, harum obcaecati delectus ipsam consequuntur magnam distinctio vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet corrupti repudiandae, iure voluptate voluptates ad ullam non aut, modi minus facere repellendus, sapiente explicabo? Iste eaque architecto quibusdam error illum.</div>
                 </div>
             </section>
         </div>
+        <section class="contato">
+            <div class="alert-form">
+                <p>Alerta <i class="fa-solid fa-triangle-exclamation"></i></p>
+            </div>
+            <div class="titles">
+                <h1>Contato</h1>
+            </div>
+            <div class="contato-form">
+                <form action="form.php" method="post">
+                    <input type="text" id="name" name="nome" placeholder="Seu nome">
+                    <input type="email" name="email" placeholder="Seu e-mail">
+                    <textarea name="mensagem" id="" cols="30" rows="7" placeholder="Coloque sua mensagem"></textarea>
+                    <input type="submit" value="Enviar" id="button-input">
+                </form>
+            </div>
+        </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="scripts/habilidades.js"></script>
     <script src="scripts/index.js"></script>
+    <script src="scripts/validacao.js"></script>
 </body>
 </html>
