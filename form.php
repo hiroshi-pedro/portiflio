@@ -1,14 +1,32 @@
 <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $nome = $_POST["name"];
-        $email = $_POST["email"];
-        $mensagem = $_POST["mensagem"];
-        
-        $destinatario = "pedroyoshidadev@gmail.com"; // Insira aqui o e-mail de destino
-        $assunto = "Contato pelo website"; // Insira aqui o assunto do e-mail
-        $corpo = "Nome: $nome\nE-mail: $email\nMensagem: $mensagem";
-        
-        mail($destinatario, $assunto, $corpo);
-        echo "Mensagem enviada com sucesso!";
-      }
+  //Variáveis
+  $nome = $_POST['nome'];
+  $email = $_POST['email'];
+  $mensagem = $_POST['mensagem'];
+  $data_envio = date('d/m/Y');
+  $hora_envio = date('H:i:s');
+
+  //Compo E-mail
+  $arquivo = "
+    <html>
+      <p><b>Nome: </b>$nome</p>
+      <p><b>E-mail: </b>$email</p>
+      <p><b>Mensagem: </b>$mensagem</p>
+      <p>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></p>
+    </html>
+  ";
+  
+  //Emails para quem será enviado o formulário
+  $destino = "pedroyoshidadev@gmail.com";
+  $assunto = "Contato pelo Site";
+
+  //Este sempre deverá existir para garantir a exibição correta dos caracteres
+  $headers  = "MIME-Version: 1.0\n";
+  $headers .= "Content-type: text/html; charset=iso-8859-1\n";
+  $headers .= "From: $nome <$email>";
+
+  //Enviar
+  mail($destino, $assunto, $arquivo, $headers);
+  
+  echo "<meta http-equiv='refresh' content='10;URL=../index.html'>";
 ?>
