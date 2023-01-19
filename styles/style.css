@@ -27,13 +27,14 @@
 }
 
 a {
-    color: var(--white);
+    color: inherit;
 }
 
 body,html {
     max-width: 100%;
     background-color: var(--cn4);
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 .container {
@@ -112,10 +113,10 @@ header {
 
 .navigation-cell {
     display: none; 
+    color: var(--white);
 }
 
 .navigation-cell i{
-    color: var(--white);
     font-size: 35px;
 }
 
@@ -130,6 +131,7 @@ header {
     animation: fadein 0.5s normal;
     transition: 1s;
     position: fixed;
+    color: var(--white);
     z-index: 1;
 }
 
@@ -496,6 +498,7 @@ footer {
     text-align: center;
     font-style: italic;
     font-weight: 300;
+    color: var(--white);
 }
 
 @media only screen and (max-width:715px) {
