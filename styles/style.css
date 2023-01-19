@@ -307,6 +307,7 @@ main {
     margin-top: 1em;
     color: var(--white);
     font-weight: 400;
+    font-size: 1.3em;
 }
 
 .sites {
@@ -432,6 +433,71 @@ main {
     background-color: var(--cn1);
 }
 
+footer {
+    background-color: var(--cn2);
+    padding-bottom: 5em;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-footer {
+    font-size: 25px;
+    color: var(--white);
+    font-family: var(--fnt1);
+    text-align: start;
+}
+
+.links-flex {
+    display: flex;
+    justify-content: end;
+    padding-top: 15px;
+}
+
+.links-flex-single {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: var(--white);
+    margin-left: 30px;
+    background-color: #14140F;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.links-flex-single i {
+    vertical-align: middle;
+}
+
+#links-flex-github {
+    background-color: #2c0074;
+}
+
+#links-flex-whatsApp {
+    background-color: #34af23;
+}
+
+#links-flex-email {
+    background-color: #c71610;
+}
+
+.text-footer {
+    color: var(--white);
+    width: 60%;
+    font-weight: 500;
+    margin-top: 1.3em;
+    text-align: justify;
+} 
+
+#text-2-footer {
+    margin-top: 70px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+}
+
 @media only screen and (max-width:715px) {
     .navigation {
         display: none;
@@ -531,5 +597,22 @@ main {
     
     .sobre-flex-img img{
         height: 350px;
+    }
+
+    .footer-flex {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .links-flex {
+        justify-content: center;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.171);
+        padding-bottom: 1.3em;
+    }
+
+    .text-footer {
+        width: 100%;
+        margin-top: 1.3em;
+        font-weight: 300;
     }
 }
