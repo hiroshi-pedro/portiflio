@@ -34,7 +34,7 @@ body,html {
     max-width: 100%;
     background-color: var(--cn4);
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 30px;
 }
 
 .container {
@@ -209,7 +209,7 @@ main {
 }
 
 .home-text h2 {
-    font-size: 3em;
+    font-size: 2em;
     color: var(--white);
 }
 
@@ -264,7 +264,7 @@ main {
 .titles {
     text-align: center;
     color: var(--white);
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 100px;
 }
 
@@ -302,7 +302,7 @@ main {
 
 .text-skill h3 {
     color: var(--white);
-    font-size: 35px;
+    font-size: 1.5em;
 }
 
 .text-skill p {
@@ -524,7 +524,7 @@ footer {
 
     .home-text p {
         color: var(--white);
-        font-size: 1.4em;
+        font-size: 1.3em;
         margin-top: 1em;
         font-weight: 500;
     }
@@ -615,5 +615,9 @@ footer {
         width: 100%;
         margin-top: 1.3em;
         font-weight: 300;
+    }
+
+    .sites-flex {
+        justify-content: center;
     }
 }
