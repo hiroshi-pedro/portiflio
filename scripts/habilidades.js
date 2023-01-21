@@ -31,6 +31,11 @@ $(function() {
     incon: '<i class="fa-solid fa-folder-open"></i>'
 },
 {
+    skill: "git",
+    description: "Git é um programa que ajuda a controlar as mudanças no código de um projeto. Ele guarda as versões antigas e permite trabalhar em equipe no mesmo projeto.",
+    incon: '<i class="fa-brands fa-git-alt"></i>'
+},
+{
     skill: "Design Canva",
     description: "Canva é uma plataforma de design gráfico que permite criar imagens personalizadas e editar imagens com efeitos. Ele oferece modelos pré-projetados, ferramentas de desenho e uma biblioteca de imagens, fontes e elementos gráficos. Canva é fácil de usar e amplamente utilizado por profissionais e amadores.",
     incon: '<i class="fa-solid fa-wand-magic-sparkles"></i>'
